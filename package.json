@@ -1,0 +1,26 @@
+{
+  "name": "portafolio_lfernando",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LfernandoPaucar/React-Lfernando.git"
+  },
+  "keywords": [
+    "fernando",
+    "web",
+    "desarrollo",
+    "dev",
+    "developer"
+  ],
+  "author": "lfernando",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LfernandoPaucar/React-Lfernando/issues"
+  },
+  "homepage": "https://github.com/LfernandoPaucar/React-Lfernando#readme",
+  "description": ""
+}
