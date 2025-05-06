@@ -1,0 +1,49 @@
+h1, h2, h3 {
+  font-family: "Playfair Display", serif;
+  color: #111;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+#header-container {
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff;
+  color: #0066cc;
+}
+#header-container .nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  align-content: center;
+  width: 100%;
+}
+#header-container .nav a {
+  text-decoration: none;
+  color: inherit;
+}
+#header-container .nav .barra-nav {
+  width: 50vw;
+}
+#header-container .nav .barra-nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+#header-container .nav .barra-nav ul li {
+  all: unset;
+}
+#header-container .nav .barra-nav ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*# sourceMappingURL=styles.css.map */
