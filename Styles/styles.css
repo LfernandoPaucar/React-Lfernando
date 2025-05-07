@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 h1, h2, h3 {
   font-family: "Playfair Display", serif;
   color: #111;
@@ -16,7 +20,10 @@ body {
   display: flex;
   flex-direction: row;
   background-color: #ffffff;
-  color: #0066cc;
+  color: #1f2937;
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(45px);
 }
 #header-container .nav {
   display: flex;
@@ -25,10 +32,14 @@ body {
   justify-content: space-around;
   align-content: center;
   width: 100%;
+  box-shadow: 2px 1px 8px 0px #cecece;
 }
 #header-container .nav a {
   text-decoration: none;
   color: inherit;
+}
+#header-container .nav a img {
+  height: 70px;
 }
 #header-container .nav .barra-nav {
   width: 50vw;
@@ -36,10 +47,20 @@ body {
 #header-container .nav .barra-nav ul {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0px;
 }
 #header-container .nav .barra-nav ul li {
   all: unset;
+  padding: 15px 40px 15px 40px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+#header-container .nav .barra-nav ul li:hover {
+  color: #f7703f;
+  background-color: #fafafa;
+  transition: all 0.5s ease-in-out;
 }
 #header-container .nav .barra-nav ul li a {
   text-decoration: none;

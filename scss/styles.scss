@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 h1, h2, h3 {
     font-family: 'Playfair Display', serif;
     color: #111;
@@ -16,7 +20,9 @@ body {
     display: flex;
     flex-direction: row;
     background-color: #ffffff;
-    color: #0066cc;
+    color: 	#1f2937;
+    position: sticky; top: 0;
+    backdrop-filter: blur(45px);
     .nav{
         display: flex;
         flex-direction: row;
@@ -24,18 +30,32 @@ body {
         justify-content: space-around;
         align-content: center;
         width: 100%;
+        box-shadow: 2px 1px 8px 0px #cecece;
         a{
             text-decoration: none;
             color: inherit;
+            img{
+                height: 70px;
+            }
         }
         .barra-nav{
             width: 50vw;
             ul{
                 display: flex;
                 flex-direction: row;
-                justify-content: space-evenly;
+                justify-content: flex-start;
+                align-items: center;
+                margin: 0px;
                 li{
                     all: unset;
+                    padding: 15px 40px 15px 40px;
+                    cursor: pointer;
+                    text-transform: uppercase;
+                    &:hover{
+                        color: #f7703f;
+                        background-color: #fafafa;
+                        transition: all 0.5s ease-in-out;
+                    }
                     a{
                         text-decoration: none;
                         color: inherit;
