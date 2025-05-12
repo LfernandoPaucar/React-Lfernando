@@ -48,21 +48,65 @@ body {
                 margin: 0px;
                 li{
                     all: unset;
-                    padding: 15px 40px 15px 40px;
+                    margin: 15px 30px 15px 30px;
                     cursor: pointer;
                     text-transform: uppercase;
-                    &:hover{
-                        color: #f7703f;
-                        background-color: #fafafa;
-                        transition: all 0.5s ease-in-out;
-                    }
+                    position: relative;
+                    &:after{
+                        content: "";
+                        position: absolute;
+                        background-color: #F24B4B;
+                        height: 3px;
+                        width: 0;
+                        left: 0;
+                        bottom: -10px;}
+                        &:hover::after{
+                            color: #F24B4B;
+                            transition: all 0.2s ease-in-out;
+                            width: 100%;
+                        }
                     a{
                         text-decoration: none;
                         color: inherit;
+                        width: 100%;
+                        &:hover{
+                            color: #F24B4B;
+                        }
+                        }
                     }
                 }
             }
         }
     }
-}
 
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0px;
+    .banner-container{
+        display: flex;
+        flex-direction: row;
+        height: 75vh;
+        max-width: 100%;
+        justify-content: center;
+        align-items: center;
+        background-color: #C9E7F2;
+        padding: 20px 200px 20px;
+        .banner-img{
+            img{
+                width: 320px;
+                height: 320px;
+                object-fit: cover;
+                border-radius: 50%;
+                object-position: center top;
+                /*height: 480px;
+                width: 360px;
+                border-radius: 20px;*/
+                box-shadow: 2px 10px 20px 10px rgba(0, 0, 0, 0.15);
+            }
+        }
+    }
+}
