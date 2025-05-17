@@ -1,10 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Oswald:wght@200..700&family=Poetsen+One&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   box-sizing: border-box;
 }
 
 h1, h2, h3 {
-  font-family: "Playfair Display", serif;
-  color: #111;
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: -500;
+  font-style: italic;
+  color: #252525;
 }
 
 body {
@@ -24,6 +28,8 @@ body {
   position: sticky;
   top: 0;
   backdrop-filter: blur(45px);
+  z-index: 1000;
+  width: 100%;
 }
 #header-container .nav {
   display: flex;
@@ -99,6 +105,12 @@ main .banner-container {
   background-color: #C9E7F2;
   padding: 20px 200px 20px;
 }
+main .banner-container .banner-description h1 {
+  color: #1f3b57;
+}
+main .banner-container .banner-description p {
+  color: #4a6c82;
+}
 main .banner-container .banner-description .buttoms-banner button {
   padding: 15px 30px;
   font-family: "Inter", sans-serif;
@@ -122,6 +134,103 @@ main .banner-container .banner-img img {
   border-radius: 50%;
   object-position: center top;
   box-shadow: 2px 10px 20px 10px rgba(0, 0, 0, 0.15);
+}
+main .aboutme-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding: 20px 200px 20px;
+  justify-content: space-around;
+  box-sizing: border-box;
+  gap: 50px;
+  background-color: white;
+}
+main .aboutme-container .experience-img {
+  background-image: url("./../resource/luis-fernando.jpg");
+  width: 40%;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 20px;
+}
+main .aboutme-container .experience-img .contenido {
+  position: relative;
+  z-index: 3;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 0.5rem 2rem;
+  border: 4px double #fff;
+  border-radius: 20px;
+  text-align: center;
+  max-width: 300px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+main .aboutme-container .experience-img .contenido h2 {
+  color: rgb(0, 0, 0);
+}
+main .aboutme-container .experience-img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 2;
+  border-radius: 20px;
+}
+main .aboutme-container .experience-description {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+main .aboutme-container .experience-description button {
+  padding: 15px 30px;
+  font-family: "Inter", sans-serif;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  background-color: #ff9f80;
+  color: #fff;
+  transition: 0.3s ease;
+  font-size: 15px;
+  width: 30%;
+}
+main .aboutme-container .experience-description button:hover {
+  background-color: #ff6f61;
+  border: 2px solid #ff9f80;
+  transform: scale(1.1);
+}
+main .skills-container {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 20px 200px 20px;
+}
+main .skills-container .tecnologias {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+main .skills-container .tecnologias .container-tecnologias {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+main .skills-container .tecnologias .container-tecnologias img {
+  width: 150px;
+  height: 150px;
+}
+main .skills-container .tecnologias .container-habilidades-blandas {
+  display: grid;
 }
 
 /*# sourceMappingURL=styles.css.map */
