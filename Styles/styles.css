@@ -18,6 +18,7 @@ body {
   line-height: 1.6;
   background-color: #f9f9f9;
   color: #333;
+  height: 100%;
 }
 
 #header-container {
@@ -111,21 +112,13 @@ main .banner-container .banner-description h1 {
 main .banner-container .banner-description p {
   color: #4a6c82;
 }
-main .banner-container .banner-description .buttoms-banner button {
-  padding: 15px 30px;
-  font-family: "Inter", sans-serif;
-  border-radius: 10px;
-  cursor: pointer;
-  border: 2px solid transparent;
-  background-color: #ff9f80;
-  color: #fff;
-  transition: 0.3s ease;
-  font-size: 15px;
+main .banner-container .banner-description .buttoms-banner {
+  display: flex;
+  flex-direction: row;
 }
-main .banner-container .banner-description .buttoms-banner button:hover {
-  background-color: #ff6f61;
-  border: 2px solid #ff9f80;
-  transform: scale(1.1);
+main .banner-container .banner-description .buttoms-banner a img {
+  width: 30px;
+  height: 30px;
 }
 main .banner-container .banner-img img {
   width: 320px;
@@ -231,6 +224,65 @@ main .skills-container .tecnologias .container-tecnologias img {
 }
 main .skills-container .tecnologias .container-habilidades-blandas {
   display: grid;
+}
+main .habilidades-blandas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .habilidades-blandas .contenedor-softskills {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  justify-items: center;
+  justify-content: center;
+  grid-column-gap: 100px;
+  grid-row-gap: 50px;
+}
+main .projects-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main .projects-container .proyectos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  gap: 50px;
+  width: 100%;
+}
+main .projects-container .proyectos .caja-p {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  text-align: center;
+}
+main .projects-container .proyectos .caja-p img {
+  height: 250px;
+  width: 250px;
+}
+main .projects-container .button-proyect {
+  margin-top: 30px;
+  text-align: center;
+  width: 100%;
+}
+main .projects-container .button-proyect button {
+  padding: 10px 20px;
+  font-family: "Inter", sans-serif;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  background-color: #ff9f80;
+  color: #fff;
+  transition: 0.3s ease;
+  font-size: 15px;
+  width: 30%;
+}
+main .projects-container .button-proyect button:hover {
+  background-color: #ff6f61;
+  border: 2px solid #ff9f80;
+  transform: scale(1.1);
 }
 
 /*# sourceMappingURL=styles.css.map */
