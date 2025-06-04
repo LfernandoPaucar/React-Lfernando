@@ -121,8 +121,8 @@ main .banner-container .banner-description .buttoms-banner a img {
   height: 30px;
 }
 main .banner-container .banner-img img {
-  width: 320px;
-  height: 320px;
+  width: 180px;
+  height: 180px;
   object-fit: cover;
   border-radius: 50%;
   object-position: center top;
@@ -139,12 +139,6 @@ main .aboutme-container {
   background-color: white;
 }
 main .aboutme-container .experience-img {
-  background-image: url("./../resource/luis-fernando.jpg");
-  width: 40%;
-  height: 600px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -223,9 +217,6 @@ main .skills-container .tecnologias .container-tecnologias img {
   width: 150px;
   height: 150px;
 }
-main .skills-container .tecnologias .container-habilidades-blandas {
-  display: grid;
-}
 main .habilidades-blandas {
   display: flex;
   flex-direction: column;
@@ -237,7 +228,7 @@ main .habilidades-blandas .contenedor-softskills {
   grid-template-rows: auto auto auto;
   justify-items: center;
   justify-content: center;
-  grid-column-gap: 100px;
+  grid-column-gap: 80px;
   grid-row-gap: 50px;
 }
 main .projects-container {
@@ -292,7 +283,7 @@ main .recomendaciones {
 main .recomendaciones .container-personas {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 35px;
 }
 main .recomendaciones .container-personas .card-1 {
   display: flex;
@@ -322,11 +313,21 @@ main .recomendaciones .container-personas .card-1 .container {
   background-color: #ebebeb;
   border-radius: 0px 0px 10px 10px;
 }
-main .recomendaciones .container-personas .card-1 .container .text p {
-  background-color: none;
+main .recomendaciones .container-personas .card-1 .container .text {
+  display: flex;
+  height: 100%;
+  width: 30%;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-evenly;
+  box-sizing: border-box;
+}
+main .recomendaciones .container-personas .card-1 .container .text .user {
   width: 0px;
   height: 0px;
   display: block;
+  margin: 0px;
+  padding: 0px;
 }
 main .recomendaciones .container-personas .card-1 .container img {
   width: 60px;
